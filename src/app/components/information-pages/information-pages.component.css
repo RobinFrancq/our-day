@@ -11,6 +11,12 @@ section {
 #schedule { background-color: #28a745; }
 #register { background-color: #dc3545; }
 
+#navbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: transparent !important;
+}
+
 @media (max-width: 800px) {
     section {
         height: 50vh;

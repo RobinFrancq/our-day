@@ -1,14 +1,18 @@
 <div data-bs-target="#navbar" data-bs-offset="0" tabindex="0">
-    <nav id="navbar" class="navbar navbar-light bg-light sticky-top">
-        <a class="navbar-brand" href="#welcome">
+    <div id="navbar" class="navbar navbar-light bg-light sticky-top">
+        <a class="navbar-brand" (click)="scrollToSection('welcome')">
             <i class="bi bi-house-heart"></i>
         </a>
-        <a class="navbar-brand" href="#schedule">Planning</a>
-        <a class="navbar-brand" href="#register">Inschrijven</a>
-    </nav>
+        <a class="navbar-brand" (click)="scrollToSection('schedule')">
+            <i class="bi bi-calendar2-heart"></i>
+        </a>
+        <a class="navbar-brand" (click)="scrollToSection('register')">
+            <i class="bi bi-clipboard-heart"></i>
+        </a>
+    </div>
     
     <div>
-        <section id="welcome">Welkom</section>
+        <section id="welcome">Welkom - {{eventSection}}</section>
         <section id="schedule">Planning</section>
         <section id="register">Inschrijven</section>
     </div>
